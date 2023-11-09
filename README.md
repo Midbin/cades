@@ -21,6 +21,8 @@ Draw a qr code to an image.
 * `content`: `str` - the content of the qr code
 * `width`: `length`|`auto` - the width of the qr code, default is `auto`
 * `height`: `length`|`auto` - the height of the qr code, default is `auto`
+* `color`: `color` - the color of the qrcode, default is `black`
+* `background`: `color` - the background color behind the qrcode, default is `white`
 
 #### Returns
 
