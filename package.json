@@ -1,0 +1,18 @@
+{
+  "name": "cades-builder",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.5.0"
+  },
+  "dependencies": {
+    "qrcode-svg": "^1.1.0",
+    "vite-plugin-singlefile": "^0.13.5"
+  }
+}
