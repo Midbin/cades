@@ -3,7 +3,7 @@
 Draw QR codes in typst.
 
 ```typ
-#import "@preview/cades:0.2.0": qr-code
+#import "@preview/cades:0.3.0": qr-code
 
 = QR Code for `typst.app`:
 #qr-code("https://typst.app", width: 3cm)
@@ -23,6 +23,7 @@ Draw a qr code to an image.
 * `height`: `length`|`auto` - the height of the qr code, default is `auto`
 * `color`: `color` - the color of the qrcode, default is `black`
 * `background`: `color` - the background color behind the qrcode, default is `white`
+* `error-correction`: `"L"`|`"M"`|`"Q"`|`"H"` - the error correction level for the qr code, default is `"M"`
 
 #### Returns
 
