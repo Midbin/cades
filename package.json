@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "rollup-plugin-license": "^3.2.0",
-    "vite": "^4.5.0"
+    "vite": "^4.5.2"
   },
   "dependencies": {
     "qrcode-svg": "^1.1.0",
