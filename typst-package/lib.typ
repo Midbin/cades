@@ -10,7 +10,7 @@
   color: black, 
   background: white,
   error-correction: "M",
-  padding: 4,
+  padding: 0,
 ) = {
   assert(
     error-correction == "L" or 
