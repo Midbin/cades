@@ -18,6 +18,9 @@
     error-correction == "Q" or 
     error-correction == "H", 
     message: "Error correction code must be one of 'L', 'M', 'Q', 'H'")
+  assert(
+    padding >= 0,
+    message: "Error padding cannot be negative")
   let result = call-js-function(qrcode-bytecode, "qrcode", content, color.to-hex(), background.to-hex(), error-correction, padding)
   return image.decode(result, width: width, height: height)
 }
