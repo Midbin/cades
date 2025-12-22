@@ -10,6 +10,7 @@
   color: black, 
   background: white,
   error-correction: "M",
+  alt: none,
 ) = {
   assert(
     error-correction == "L" or 
@@ -18,5 +19,5 @@
     error-correction == "H", 
     message: "Error correction code must be one of 'L', 'M', 'Q', 'H'")
   let result = call-js-function(qrcode-bytecode, "qrcode", content, color.to-hex(), background.to-hex(), error-correction)
-  return image(bytes(result), width: width, height: height)
+  return image(bytes(result), width: width, height: height, alt: alt)
 }
