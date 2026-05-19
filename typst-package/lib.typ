@@ -1,4 +1,4 @@
-#import "@preview/jogs:0.2.0": compile-js, call-js-function
+#import "@preview/jogs:0.2.4": compile-js, call-js-function
 
 #let qrcode-src = read("./qrcode.js")
 #let qrcode-bytecode = compile-js(qrcode-src)
@@ -20,7 +20,7 @@
     message: "Error correction code must be one of 'L', 'M', 'Q', 'H'")
   assert(
     padding >= 0,
-    message: "Error padding cannot be negative")
+    message: "Padding cannot be negative")
   let result = call-js-function(qrcode-bytecode, "qrcode", content, color.to-hex(), background.to-hex(), error-correction, padding)
-  return image.decode(result, width: width, height: height)
+  return image(bytes(result), width: width, height: height)
 }
