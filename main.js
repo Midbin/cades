@@ -1,6 +1,6 @@
 import QRCode from 'qrcode-svg';
 
-export default function generateQRCode(content, color, background, errorCorrection) {
+export default function generateQRCode(content, color, background, errorCorrection, padding) {
     if (content === undefined) {
         return;
       }
@@ -10,7 +10,7 @@ export default function generateQRCode(content, color, background, errorCorrecti
         color: color, 
         background: background,
         ecl: errorCorrection,
-        padding: 0,
+        padding: padding,
     });
     return qrcode.svg();
 }

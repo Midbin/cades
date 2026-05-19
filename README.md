@@ -24,6 +24,7 @@ Draw a qr code to an image.
 * `color`: `color` - the color of the qrcode, default is `black`
 * `background`: `color` - the background color behind the qrcode, default is `white`
 * `error-correction`: `"L"`|`"M"`|`"Q"`|`"H"` - the error correction level for the qr code, default is `"M"`
+* `padding`: `int` - the padding of the qrcode, default is 0
 
 #### Returns
 
